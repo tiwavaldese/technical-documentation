@@ -29,7 +29,61 @@ pre{
     padding: 6px 10px;width: fit-content;
     background-color: #121212;color: #e2e2e2;
 }
+.copy-text{
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
 
+}
+.copy-text button{
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+    background: #5c81dc;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 35px;
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.copy-text button:active{
+    background: #809ce2;
+    }
+.copy-text button:before{
+content: "copied";
+position: absolute;
+top: -45px;
+right: 0px;
+background: #5c81dc;
+padding: 8px 10px;
+border-radius: 20px;
+font-size: 15px;
+display: none;
+}
+.copy-text button:after{
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #5c81dc;
+   transform: rotate(45deg);
+   display: none;
+    }
+    .copy-text.active button:before,
+    .copy-text.active button:after{
+display: block;
+    }
+    button .fa{
+        position: absolute;
+     top: 7px;
+     right: 10px;
+    }
 @media screen and (max-width: 800px) {
     #navbar {
         position: relative;top: 0px;left: 0px;
@@ -41,6 +95,7 @@ pre{
         padding: 10px 0px 50px 0px;width: calc(100% - 50px);
     }
     pre{max-width: 100%;overflow-x: auto;}
+
 }
 
 
