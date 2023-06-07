@@ -1,8 +1,9 @@
+
 let copyText = document.querySelector(".copy-text");
 copyText.querySelector("button").addEventListener("click", function(){
-    let code = copyText.querySelector("code.text");
-    code.select();
-document.executeCommand("copy");
+    let code = copyText.querySelector(".text");
+   code.focus();
+document.execCommand("copy");
 copyText.classList.add("active");
 window.getSelection().removeAllRanges();
 setTimeout(function(){
