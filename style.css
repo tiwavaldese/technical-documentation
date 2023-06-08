@@ -107,12 +107,12 @@ display: block;
 }
 .copy-text button:before{
     top: -30px;
-    display: block;
+    display: none;
     }
     .copy-text button:after{
         top: 0px;
         right: 25px;
-       display: block;
+       display: none;
         }
 }
 
