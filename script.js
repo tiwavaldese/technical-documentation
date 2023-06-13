@@ -7,7 +7,6 @@ let  copyText = document.getElementById('copy-text').innerHTML;
     } catch (err) {
       console.error('Failed to copy: ', err);
     }
-  
   }
 
   let  copyText1 = document.getElementById('copy').innerHTML;
